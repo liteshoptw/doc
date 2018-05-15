@@ -30,6 +30,7 @@ block content
                 #collapseOne.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
                   .card-body
                     | #{item.ans}
+        hr
         .col-12
           h4
             | 金流
@@ -48,6 +49,19 @@ block content
             | 電子發票
           #accordionExample.accordion
             each item in menus.invoiceLists
+              .card
+                #headingOne.card-header
+                  h5.mb-0
+                    button.btn.btn-link(aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button")
+                      | #{item.que}
+                #collapseOne.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
+                  .card-body
+                    | #{item.ans}
+        .col-12
+          h4
+            | 簡訊
+          #accordionExample.accordion
+            each item in menus.smsLists
               .card
                 #headingOne.card-header
                   h5.mb-0
