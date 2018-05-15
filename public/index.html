@@ -511,121 +511,41 @@
               <div class="card">
                 <div id="headingOne" class="card-header">
                   <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">要簽約嗎</button>
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">簡訊會回朔發送嗎</button>
                   </h5>
                 </div>
                 <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">要使用ECFIT的電子發票會需要先跟ECFIT簽約，之後他們會提供給您這邊需要填寫的API欄位喔，我們會跟您留些基本資料，包括公司、統編、聯絡人的姓名 電話、方便聯繫的時間，接下來ECFIT就會有專人與您聯繫，完成簽約並且開通帳號之後，到我們的後台去填入商店代號以及API KEY就好囉</div>
+                  <div class="card-body">如果是舊的訂單，但是之後才到期的話，之後會發簡訊，可是如果之前已經過期了(就是已經發過EMAIL提醒的) 就不會了喔，但是您可以把提醒簡訊的樣板貼進去訂單裡面發送，一樣會自動幫您帶連結</div>
                 </div>
               </div>
               <div class="card">
                 <div id="headingOne" class="card-header">
                   <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">需要多久呢？</button>
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">簡訊除了發送可以接收嗎</button>
                   </h5>
                 </div>
                 <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">如果是首次使用電子發票的話會比較久，因為要跑國稅局那邊的流程，印象中是一週左右</div>
+                  <div class="card-body">可能就只能從您自己的手機做發送了，因為我們後台的簡訊服務，是像一般外面那種通知性質的簡訊，所以同一個號碼可能會出現很多不同公司的訊息</div>
                 </div>
               </div>
               <div class="card">
                 <div id="headingOne" class="card-header">
                   <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">發票載具那一欄是什麼</button>
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">群發可以帶參數嗎</button>
                   </h5>
                 </div>
                 <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">電子發票欄位上的「發票載具」，我們目前提供的是財政部共通性載具的「手機條碼」，最早期欄位名稱為「手機條碼」，但許多客人下單時誤以為要填寫手機導致訂單無法送出或發票錯誤，因此後來變更為「發票載具」(8碼包含斜線)</div>
+                  <div class="card-body">群發可以使用的參數為 {customer} 以及 {shop}歡迎使用</div>
                 </div>
               </div>
               <div class="card">
                 <div id="headingOne" class="card-header">
                   <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">如何啟用電子發票</button>
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">未發送的簡訊，儲值後會補發嗎</button>
                   </h5>
                 </div>
                 <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">商店代號在您的 ECFIT 網址裡面，就是 xxxx.ecfit.cc 的開頭，那就已經可以開始使用囉，消費者付款完成，或者成立貨到付款訂單的時候都會同時開立發票出去，您也可以在 ECFIT後台看到對應資料</div>
-                </div>
-              </div>
-              <div class="card">
-                <div id="headingOne" class="card-header">
-                  <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">什麼是載具及歸戶</button>
-                  </h5>
-                </div>
-                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">https://a1.digiwin.com/essay/essay-content.php?detail=105</div>
-                </div>
-              </div>
-              <div class="card">
-                <div id="headingOne" class="card-header">
-                  <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">等待財政部審核，會有「沒通過」的狀況嗎</button>
-                  </h5>
-                </div>
-                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">根據我們之前詢問 ECFIT 得到的答案是「通常」不會沒通過，但不排除有時會因某些連線因素造成發票較晚通過審核。例如：雙數月底時，由於營業人必須完成該期所有發票的開立、折讓、作廢以及單月初營業人要準備申報營業稅下載媒體檔、匯入出字軌等，此時財政部系統負擔較大，就有可能延遲。</div>
-                </div>
-              </div>
-              <div class="card">
-                <div id="headingOne" class="card-header">
-                  <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">(承上) 所以我狀態會不會看到沒通過，還是沒通過它一樣會一直重送？</button>
-                  </h5>
-                </div>
-                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">通常不會有審核沒過的狀況，那如果真的發生，電子發票廠商 (ECFIT 或是綠界) 會協助您解決此問題</div>
-                </div>
-              </div>
-              <div class="card">
-                <div id="headingOne" class="card-header">
-                  <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">手機條碼？發票載具？</button>
-                  </h5>
-                </div>
-                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">之前有考慮過加上提示，不過怕有些不清楚的客人會直接拿來貼上，就像之前原本顯示手機條碼，結果客人會填手機號碼一樣，反而造成商家困擾。因為客人如果沒填載具，發票還是可以成功開立 (也會寄送email) 但是如果填錯的話變成發票會開立失敗，商家還得去聯絡處理。</div>
-                </div>
-              </div>
-              <div class="card">
-                <div id="headingOne" class="card-header">
-                  <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">客人填錯載具怎麼辦？</button>
-                  </h5>
-                </div>
-                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">我們這邊在填寫欄位的時候還是會做一些格式上的檢查，如果他剛好格式對了，但是資料卻是錯的而導致開立發票失敗的話，要請您這邊跟客人聯繫取得正確的載具，我們這邊替您更正並且重送發票。但是如果他填了某個正確的載具(比方說剛好對到某個路人的號碼)，而發票也成功開立的話，要更正就只能先作廢這張發票，並且去 ECFIT 的後台手動開立了</div>
-                </div>
-              </div>
-              <div class="card">
-                <div id="headingOne" class="card-header">
-                  <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">電子發票何時開立</button>
-                  </h5>
-                </div>
-                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">一般訂單會在「付款完成後」自動開立發票，或是貨到付款的訂單會在下單的同時開立發票，當客人線上下單送出後，如果是「已付款」或是「貨到付款」的訂單，系統會自動開立發票，但因為發票都需經過財政部審核，因此開立的當下您會在後台看到「等待財政部回應」。（12:54 吼吼：對 這流程我一開始也覺得很奇怪，不過跟 ECFIT 討論後，有些商家會把發票印出來一起寄送，為了確保一致性的流程：「出貨時同時也已經開立發票」所以採這個作法。其實這也很合理就是了 就像 B2B 是先開發票再請款，沒付款的話頂多作廢發票 (就是貨到付款退回時的程序)。總之，出貨前開發票，退貨時作廢發票）</div>
-                </div>
-              </div>
-              <div class="card">
-                <div id="headingOne" class="card-header">
-                  <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">電子發票何時作廢</button>
-                  </h5>
-                </div>
-                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">如果訂單取消或者超取未取的話，會同時作廢發票。退貨的話，如果您有在 LiteShop 後台使用退貨功能，輸入成功後，該訂單的發票也會自動作廢。包括：(1)取消訂單(2)超商未取(3)驗退(4)手動按下作廢。只要商家點下「取消訂單」，不管他是任何形式的付款方式/或者他原先有沒有提出取消訂單的需求，會同時作廢發票</div>
-                </div>
-              </div>
-              <div class="card">
-                <div id="headingOne" class="card-header">
-                  <h5 class="mb-0">
-                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">電子發票機制</button>
-                  </h5>
-                </div>
-                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                  <div class="card-body">(a)線上付款，例如信用卡：付款成功後開立 (b)貨到付款、面交：訂單成立時開立 (c)線下：按下手動確認付款後開立</div>
+                  <div class="card-body">只要是未發送 (沒有成功送出) 的簡訊，後續補發都要手動按下「重新發送」才會送出（如下圖），因此假設您近日儲值，只要沒有按下重新發送，舊的簡訊就不會被送出。</div>
                 </div>
               </div>
             </div>
@@ -634,6 +554,6 @@
       </div>
     </section>
   </body>
-  <script src="js/vendors.js?1526369185852"></script>
-  <script src="js/main.js?1526369185852"></script>
+  <script src="js/vendors.js?1526369318216"></script>
+  <script src="js/main.js?1526369318216"></script>
 </html>
