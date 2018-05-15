@@ -83,3 +83,16 @@ block content
                 #collapseOne.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
                   .card-body
                     | #{item.ans}
+        .col-12
+          h4
+            | 訂單
+          #accordionExample.accordion
+            each item in menus.ordersLists
+              .card
+                #headingOne.card-header
+                  h5.mb-0
+                    button.btn.btn-link(aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button")
+                      | #{item.que}
+                #collapseOne.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
+                  .card-body
+                    | #{item.ans}

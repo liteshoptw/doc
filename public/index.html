@@ -595,10 +595,105 @@
               </div>
             </div>
           </div>
+          <div class="col-12">
+            <h4>訂單</h4>
+            <div id="accordionExample" class="accordion">
+              <div class="card">
+                <div id="headingOne" class="card-header">
+                  <h5 class="mb-0">
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">有批次取消功能嗎</button>
+                  </h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                  <div class="card-body">沒有批次取消的功能耶，因為也怕會誤觸，所以要麻煩您確認每一張訂單之後再個別取消喔，建議使用自動取消功能，這邊設一個天數，如果客戶幾天內沒付款，系統就會把它自動取消掉，所以這種客人自己申請取消的，過幾天也是會自動被取消。</div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="headingOne" class="card-header">
+                  <h5 class="mb-0">
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">取消訂單後，庫存會自動加回嗎？</button>
+                  </h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                  <div class="card-body">庫存不會自動退，因為回來的商品不見得都可以直接入庫（可能是瑕疵品），依照之前的經驗，通常是回來的東西先驗退，並堆放在一起，一段時間（比方說一週）整理一次，看看有哪些東西還能繼續賣，再去入庫存</div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="headingOne" class="card-header">
+                  <h5 class="mb-0">
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">訂單自動取消，也會停止取號連結嗎</button>
+                  </h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                  <div class="card-body">自動取消時間到，我們的系統就會自動把這筆單取消，並且關閉付款跟取號的連結，不過要注意喔，如果客人先前已經先取號，只是還沒去付款的話，那他還是有可能會付款成功，他如果付款成功的話，系統還是會讓他這筆單復原</div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="headingOne" class="card-header">
+                  <h5 class="mb-0">
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">何時要結案訂單</button>
+                  </h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                  <div class="card-body">午安～ 結案訂單就是您這筆單已經收到錢，也出貨了，整個流程都跑完了就可以在這邊按下結案，之後就不會出現在新訂單的列表裡面喔，如果您是批次出貨或是批次取號的話，都會自動幫您結案</div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="headingOne" class="card-header">
+                  <h5 class="mb-0">
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">如果後臺強制取消，消費者又去付款了，取消頁面還是會顯示付款完成對嗎</button>
+                  </h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                  <div class="card-body">是的，關於「已取消」的訂單，系統雖然會隱藏頁面上的付款資訊，但顧客如果照著之前記住的帳號去轉帳，依然可以匯款成功，因此我們會把該筆訂單的付款狀態變成「已付款」跟並將訂單狀態復原成「新訂單」，避免商家漏了這筆匯款。</div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="headingOne" class="card-header">
+                  <h5 class="mb-0">
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">排程時間</button>
+                  </h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                  <div class="card-body">如果是舊的訂單，但是之後才到期的話，之後會發簡訊，可是如果之前已經過期了(就是已經發過EMAIL提醒的) 就不會了喔，但是您可以把提醒簡訊的樣板貼進去訂單裡面發送，一樣會自動幫您帶連結</div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="headingOne" class="card-header">
+                  <h5 class="mb-0">
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">訂單取消後可以付錢嗎</button>
+                  </h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                  <div class="card-body">跟您解釋一下，一般來說，訂單取消後就無法再次付款，但是ATM轉帳他有可能會在訂單取消前轉帳，不過由於入帳日通常要到隔天早上，所以無可避免一定會發生訂單取消的狀態下，我們的伺服器又收到客人已經付款的通知。我們這邊還是必須忠實反映客人的付款狀態，以免商家漏了處理。您這邊如果希望還是要取消這筆訂單的話，依然可以直接取消訂單並且退款給客人(就如同一般退款機制)。信用卡刷卡我們這邊會阻擋客人不能再次付款，不過轉帳的話就沒辦法了。已經取消的訂單我們本來就會把頁面上面的付款資訊隱藏，但是他如果照著之前記住的帳號去轉帳，ATM不會擋他，所以這邊我們才會把他的付款狀態跟訂單復原，避免商家漏了這個匯款。綠界那個他有一個參數是這個ATM號可以持續幾天(比方說三天 或是七天) 但是這個數值是建立訂單的時候就固定了 (會跟我們的訂單提醒的自動取消天數一樣)</div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="headingOne" class="card-header">
+                  <h5 class="mb-0">
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">請問建立驗退訂單後 有什麼資料可以查看？因為我們沒有訂單可以來實驗整個退貨流程</button>
+                  </h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                  <div class="card-body">在 LiteShop 後台驗退訂單之後，訂單狀態會轉換成「已退貨」，但退貨寄送與退款流程仍須由商家自行處理。若您希望測試驗退訂單功能，也可以嘗試自行下單，測試完成後再復原並取消訂單即可</div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="headingOne" class="card-header">
+                  <h5 class="mb-0">
+                    <button aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" class="btn btn-link">怎麼退貨退款</button>
+                  </h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                  <div class="card-body">如果消費者購買後要退貨，可透過訂單完成頁（如您提供的網址）的「提問 / 聯絡商家」聯繫貴司，貴司收到訊息後，可在 LiteShop 後台進行驗退訂單。驗退之後訂單狀態會轉換成「已退貨」，但退貨寄送與退款流程仍須由商家自行處理。</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </body>
-  <script src="js/vendors.js?1526369626627"></script>
-  <script src="js/main.js?1526369626627"></script>
+  <script src="js/vendors.js?1526370690093"></script>
+  <script src="js/main.js?1526370690093"></script>
 </html>
