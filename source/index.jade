@@ -1,0 +1,58 @@
+extends _layout.jade
+
+block content
+  section
+    .container
+      .row
+        .col-12
+          h4
+            | 物流／出貨
+          #accordionExample.accordion
+            each item in menus.shippingLists
+              .card
+                #headingOne.card-header
+                  h5.mb-0
+                    button.btn.btn-link(aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button")
+                      | #{item.que}
+                #collapseOne.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
+                  .card-body
+                    | #{item.ans}
+        .col-12
+          h4
+            | 轉換追蹤
+          #accordionExample.accordion
+            each item in menus.analyticsLists
+              .card
+                #headingOne.card-header
+                  h5.mb-0
+                    button.btn.btn-link(aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button")
+                      | #{item.que}
+                #collapseOne.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
+                  .card-body
+                    | #{item.ans}
+        .col-12
+          h4
+            | 金流
+          #accordionExample.accordion
+            each item in menus.paymentLists
+              .card
+                #headingOne.card-header
+                  h5.mb-0
+                    button.btn.btn-link(aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button")
+                      | #{item.que}
+                #collapseOne.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
+                  .card-body
+                    | #{item.ans}
+        .col-12
+          h4
+            | 電子發票
+          #accordionExample.accordion
+            each item in menus.invoiceLists
+              .card
+                #headingOne.card-header
+                  h5.mb-0
+                    button.btn.btn-link(aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button")
+                      | #{item.que}
+                #collapseOne.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
+                  .card-body
+                    | #{item.ans}

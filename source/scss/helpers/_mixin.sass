@@ -1,0 +1,42 @@
+// bootstrap4 breakpoint
+@mixin sm-up
+  @media (min-width: 576px)
+    @content
+@mixin md-up
+  @media (min-width: 768px)
+    @content
+@mixin lg-up
+  @media (min-width: 992px)
+    @content
+@mixin xl-up
+  @media (min-width: 1200px)
+    @content
+
+@mixin xs-down
+  @media (max-width: 575.98px)
+    @content
+@mixin sm-down
+  @media (max-width: 767.98px)
+    @content
+@mixin md-down
+  @media (max-width: 991.98px)
+    @content
+@mixin lg-down
+  @media (max-width: 1199.98px)
+    @content
+
+@mixin xs-only
+  @media (max-width: 575.98px)
+    @content
+@mixin sm-only
+  @media (min-width: 576px) and (max-width: 767.98px)
+    @content
+@mixin md-only
+  @media (min-width: 768px) and (max-width: 991.98px)
+    @content
+@mixin lg-only
+  @media (min-width: 992px) and (max-width: 1199.98px)
+    @content
+@mixin xl-only
+  @media (min-width: 1200px)
+    @content
